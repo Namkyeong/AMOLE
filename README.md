@@ -47,7 +47,14 @@ data/
         └── molecules.sdf
 ```
 
-After running `pretrain.py` code, it will automatically further preprocess the datasets provided in the `./data/PubChemSTM/raw/` directory.
+By running `TanimotoSTM.py` code, it will automatically further preprocess the datasets provided in the `./data/PubChemSTM/raw/` directory.
+
+After running the code, you should run `create_same_CID.py` and `create_similarities_CID.py`.
+
+`create_similarities_CID.py` will create the dictionary containing the CID and corresponding structurally similalar molecules' CIDs.
+
+`create_same_CID.py` will create text list of same CID.
+
 
 ### Initial Checkpoints
 

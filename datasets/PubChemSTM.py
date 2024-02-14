@@ -24,7 +24,7 @@ class PubChemSTM_Datasets_SMILES(Dataset):
         self.root = root
 
         CID2text_file = os.path.join(self.root, "raw/CID2text.json")
-        CID2SMILES_file = os.path.join(self.root, "raw/CID2SMILES_1128.csv")
+        CID2SMILES_file = os.path.join(self.root, "raw/CID2SMILES.csv")
         self.load_CID2SMILES(CID2text_file, CID2SMILES_file)
         
         self.text_list = []
