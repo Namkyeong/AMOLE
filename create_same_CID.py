@@ -11,4 +11,6 @@ for i in range(len(CID_text_file)):
     idx_list = np.delete(idx_list[0], np.where(idx_list[0] == i)[0][0])
     dict[i] = idx_list
 
+SAVE_PATH = "./data/PubChemSTM/processed/"
+os.makedirs(SAVE_PATH, exist_ok=True) # Create directory if it does not exist
 torch.save(dict, "./data/PubChemSTM/processed/same_CID.pt")
