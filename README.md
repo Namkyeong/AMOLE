@@ -34,6 +34,20 @@ We provide whole conda environment used during the experiments in ``AMOLE.yml``.
 Please follow the instruction for preprocessing step of [previous work](https://github.com/chao1224/MoleculeSTM/tree/main?tab=readme-ov-file#2-datasets-and-preprocessing) for extracting the data from PubChem database.
 
 After preparing the data, please put the data into `./data/PubChemSTM/raw/` directory.
+The output structure should be like this:
+```
+data/
+├── PubChemSTM
+    └── raw
+        └── CID2name_raw.json
+        └── CID2name.json
+        └── CID2text_raw.json
+        └── CID2text.json
+        └── CID2SMILES.csv
+        └── molecules.sdf
+```
+
+After running `pretrain.py` code, it will automatically further preprocess the datasets provided in the `./data/PubChemSTM/raw/` directory.
 
 ### Initial Checkpoints
 
