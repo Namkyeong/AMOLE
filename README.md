@@ -6,8 +6,8 @@ The official source code for **Molecule Language Model with Augmented Pairs and 
 ## Overview
 Understanding the molecules and their textual descriptions via molecule language models (MoLM) recently got a surge of interest among researchers.
 However, unique challenges exist in the field of MoLM due to 1) a limited amount of molecule-text paired data and 2) missing expertise that occurred due to the specialized areas of focus among the experts.
-To this end, we propose AMOLE which 1) augments molecule-text pairs with structural similarity preserving loss, and 2) transfers the expertise between the molecules.
-Extensive experiments on various downstream tasks demonstrate the superiority of AMOLE to comprehend molecules and their descriptions, highlighting its potential for application in real-world drug discovery.
+To this end, we propose AMOLE, which 1) augments molecule-text pairs with structural similarity preserving loss, and 2) transfers the expertise between the molecules.
+Extensive experiments on various downstream tasks demonstrate the superiority of AMOLE in comprehending molecules and their descriptions, highlighting its potential for application in real-world drug discovery.
 
 <img src="assets/git_fig.png" width="80%"></img> 
 
