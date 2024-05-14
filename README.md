@@ -13,7 +13,6 @@ Additionally, we propose an expertise reconstruction loss to transfer knowledge 
 Extensive experiments on various downstream tasks, including two novel tasks named zero-shot question and answering task and zero-shot virtual screening task, 
 demonstrate the superiority of AMOLE in a more intricate understanding of molecules and their descriptions, and highlight potential applicability in real-world drug discovery.
 
-<img src="assets/git_fig.png" width="80%"></img> 
 
 ## Environment
 We conduct enviroments with the following packages
