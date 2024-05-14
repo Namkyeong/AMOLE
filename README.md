@@ -1,13 +1,17 @@
 # AMOLE
 
-The official source code for **Molecule Language Model with Augmented Pairs and Expertise Transfer**, submitted to ARR 2024 Feburary.
+The official source code for **Molecule Language Model with Augmented Pairs and Expertise Transfer**.
 
 
 ## Overview
-Understanding the molecules and their textual descriptions via molecule language models (MoLM) recently got a surge of interest among researchers.
-However, unique challenges exist in the field of MoLM due to 1) a limited amount of molecule-text paired data and 2) missing expertise that occurred due to the specialized areas of focus among the experts.
+Recently, there has been a growing interest among researchers in understanding molecules and their textual descriptions through molecule language models (MoLM). 
+However, despite some early promising developments, the advancement of MoLM still trails significantly behind that of vision language models (VLM).
+This is because, different from the VLM, unique challenges exist in the field of MoLM due to 1) a limited amount of molecule-text paired data and 2) missing expertise that occurred due to the specialized areas of focus among the experts.
 To this end, we propose AMOLE, which 1) augments molecule-text pairs with structural similarity preserving loss, and 2) transfers the expertise between the molecules.
-Extensive experiments on various downstream tasks demonstrate the superiority of AMOLE in comprehending molecules and their descriptions, highlighting its potential for application in real-world drug discovery.
+Specifically, AMOLE enriches molecule-text pairs by sharing descriptions among structurally similar molecules with a novel structural similarity preserving loss. 
+Additionally, we propose an expertise reconstruction loss to transfer knowledge from molecules that have extensive descriptions to those with fewer descriptions.
+Extensive experiments on various downstream tasks, including two novel tasks named zero-shot question and answering task and zero-shot virtual screening task, 
+demonstrate the superiority of AMOLE in a more intricate understanding of molecules and their descriptions, and highlight potential applicability in real-world drug discovery.
 
 <img src="assets/git_fig.png" width="80%"></img> 
 
