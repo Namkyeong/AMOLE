@@ -4,15 +4,9 @@ The official source code for **Molecule Language Model with Augmented Pairs and 
 
 
 ## Overview
-Recently, there has been a growing interest among researchers in understanding molecules and their textual descriptions through molecule language models (MoLM). 
-However, despite some early promising developments, the advancement of MoLM still trails significantly behind that of vision language models (VLM).
-This is because, different from the VLM, unique challenges exist in the field of MoLM due to 1) a limited amount of molecule-text paired data and 2) missing expertise that occurred due to the specialized areas of focus among the experts.
-To this end, we propose AMOLE, which 1) augments molecule-text pairs with structural similarity preserving loss, and 2) transfers the expertise between the molecules.
-Specifically, AMOLE enriches molecule-text pairs by sharing descriptions among structurally similar molecules with a novel structural similarity preserving loss. 
-Additionally, we propose an expertise reconstruction loss to transfer knowledge from molecules that have extensive descriptions to those with fewer descriptions.
-Extensive experiments on various downstream tasks, including two novel tasks named zero-shot question and answering task and zero-shot virtual screening task, 
-demonstrate the superiority of AMOLE in a more intricate understanding of molecules and their descriptions, and highlight potential applicability in real-world drug discovery.
+Recently, there has been a growing interest among researchers in understanding molecules and their textual descriptions through molecule language models (MoLM). However, despite some early promising developments, the advancement of MoLM still trails significantly behind that of vision language models (VLM). This is because unique challenges exist apart from VLM in the field of MoLM due to 1) a limited amount of molecule-text paired data and 2) missing expertise that occurred due to the specialized areas of focus among the experts. To this end, we propose AMOLE, which 1) augments molecule-text pairs with structural similarity preserving loss, and 2) transfers the expertise between the molecules. Specifically, AMOLE enriches molecule-text pairs by sharing descriptions among structurally similar molecules with a novel structural similarity preserving loss. Moreover, we propose an expertise reconstruction loss to transfer knowledge from molecules that have extensive expertise to those with less expertise. Extensive experiments on various downstream tasks, including two novel tasks named zero-shot question and answering task and zero-shot virtual screening task, demonstrate the superiority of AMOLE in a more intricate understanding of molecules and their descriptions, and highlight potential applicability in real-world drug discovery.
 
+<img src="assets/Model.png" width="50%"></img> 
 
 ## Environment
 We conduct enviroments with the following packages
