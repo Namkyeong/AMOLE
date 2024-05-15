@@ -8,6 +8,8 @@ Recently, there has been a growing interest among researchers in understanding m
 
 <img src="assets/Model.png" width="50%"></img> 
 
+**Overall model architecture.**
+
 ## Environment
 We conduct enviroments with the following packages
 ```
