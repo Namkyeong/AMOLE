@@ -39,7 +39,8 @@ class QA_Datasets_Graph_retrieval(InMemoryDataset):
 
     
     def load_Graph_CID_and_text(self):
-        self.graphs, self.slices, self.options, self.labels_list = torch.load(self.processed_paths[0])
+
+        self.graphs, self.slices, self.options, self.question_list, self.labels_list = torch.load(self.processed_paths[0])
 
         return
 
@@ -55,7 +56,9 @@ class QA_Datasets_Graph_retrieval(InMemoryDataset):
     def get(self, index):
         
         data = self.get_graph(index)
+        question = self.question_list[index]
         options = self.options[index]
+        options = [question + " " + options[i] for i in range(len(options))]
         label = self.labels_list[index]
         
         return data, options, label
@@ -92,17 +95,19 @@ class QA_Datasets_Graph_retrieval(InMemoryDataset):
             SMILES2Graph[SMILES] = graph
         print("SMILES2graph", len(SMILES2Graph))
         
-        SMILES_list, graph_list, options_list, labels_list = list(), list(), list(), list()
+        SMILES_list, graph_list, options_list, question_list, labels_list = list(), list(), list(), list(), list()
         
         for i in tqdm(range(len(df))):
             SMILES = df["smiles"][i]
             graph = SMILES2Graph[SMILES]
             options = eval(df["options"][i])
+            question = df["question"][i]
             label = int(df["correct_option"][i] - 1)
 
             SMILES_list.append(SMILES)
             graph_list.append(graph)
             options_list.append(options)
+            question_list.append(question)
             labels_list.append(label)
         
         print("Total Converted Data: {}".format(len(SMILES_list)))
@@ -115,7 +120,7 @@ class QA_Datasets_Graph_retrieval(InMemoryDataset):
 
         # Save graphs
         graphs, slices = self.collate(graph_list)
-        torch.save((graphs, slices, options_list, labels_list), self.processed_paths[0])
+        torch.save((graphs, slices, options_list, question_list, labels_list), self.processed_paths[0])
         return
 
     def __len__(self):
