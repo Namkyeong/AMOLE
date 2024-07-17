@@ -1,6 +1,6 @@
 # AMOLE
 
-The official source code for [**Molecule Language Model with Augmented Pairs and Expertise Transfer**](https://arxiv.org/abs/2407.09043).
+The official source code for [**Molecule Language Model with Augmented Pairs and Expertise Transfer**](https://arxiv.org/abs/2407.09043), accepted at CIKM 2024.
 
 
 ## Overview
