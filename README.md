@@ -1,4 +1,11 @@
-# AMOLE
+# Molecule Language Model with Augmented Pairs and Expertise Transfer
+
+<p align="center">   
+    <a href="https://pytorch.org/" alt="PyTorch">
+      <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?e&logo=PyTorch&logoColor=white" /></a>
+    <a href="https://cikm2024.org/" alt="Conference">
+        <img src="https://img.shields.io/badge/CIKM'24-brightgreen" /></a>
+</p>
 
 The official source code for [**Molecule Language Model with Augmented Pairs and Expertise Transfer**](https://arxiv.org/abs/2407.09043), accepted at CIKM 2024.
 
