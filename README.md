@@ -1,4 +1,4 @@
-# Molecule Language Model with Augmented Pairs and Expertise Transfer
+# Vision Language Model is NOT All You Need: Augmentation Strategies for Molecule Language Model
 
 <p align="center">   
     <a href="https://pytorch.org/" alt="PyTorch">
@@ -7,7 +7,7 @@
         <img src="https://img.shields.io/badge/CIKM'24-brightgreen" /></a>
 </p>
 
-The official source code for [**Molecule Language Model with Augmented Pairs and Expertise Transfer**](https://arxiv.org/abs/2407.09043), accepted at CIKM 2024.
+The official source code for [**Vision Language Model is NOT All You Need: Augmentation Strategies for Molecule Language Model**](https://arxiv.org/abs/2407.09043), accepted at CIKM 2024.
 
 
 ## Overview
